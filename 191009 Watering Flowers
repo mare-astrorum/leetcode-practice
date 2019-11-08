@@ -1,0 +1,141 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Wed Oct  9 11:21:42 2019
+
+@author: ai
+"""
+import copy
+
+plants = [5, 5, 5, 5]
+capacity1 = 5
+capacity2 = 7
+
+refill = 2
+
+1.
+
+5-2 = 3
+7-2 = 5
+
+2. 
+
+3-4 = -1 ==> refill
+5-1 = 6
+
+3. 
+
+5-5 or 6-5
+
+plants = [5]
+import copy
+
+#Class Solution:
+    
+def watering_plants(plants, capacity1, capacity2):
+
+
+    if capacity1 == 0 or capacity2 == 0:
+        return "Error, check bucket volume"
+    if len(plants) > 1000 or len(plants) < 1:
+        return "Error, check amount of plants"
+    for plant in plants:
+        if plant > 1000000:
+            return "Error, check plant value"            
+
+    
+    refill = 2
+    capacity1_starting = copy.deepcopy(capacity1)
+    capacity2_starting = copy.deepcopy(capacity2)
+
+    for i in range(len(plants)):
+        print(len(plants))
+        
+        if len(plants) == 1:
+            print("List is 1")
+
+        #[0] 5
+        
+#            print(ind, plant)
+#            if capacity2 - plant >= 0: 
+#                print(refill)
+#                #return refill
+#            elif capacity1 - plant >= 0: 
+#                print(refill)
+#                #return refill
+#            elif capacity1 + capacity2 - plant >= 0:
+#                print(refill)
+#                #return refill
+#            else:
+#                
+#                capacity1 = capacity1_starting
+#                capacity2 = capacity2_starting
+#                refill += 1
+
+
+        if capacity1 - plants[0] >= 0: 
+            print("front larger")#5-2, 3-4
+            capacity1 = capacity1 - plants[0] #0
+            print(plants)
+            plants.pop(0)
+            print(plants)
+    
+
+        elif capacity1 - plants[0] < 0: 
+            print("front smaller")
+            refill +=1
+            capacity1 = capacity1_starting
+            capacity1 = capacity1 - plants[0]
+            plants.pop(0)
+            print(plants)#[4, 5, 1]
+            continue
+
+
+        if capacity2 - plants[-1] >= 0:
+            print("end larger")
+            capacity2 = capacity2 - plants[-1] #7-2, 5-1
+            plants.pop(-1) 
+            print(plants)#[2,4,5,1], [4, 5]
+        elif capacity2 - plant < 0: 
+            print("end smaller")
+            refill +=1
+            capacity2 = capacity2_starting
+            capacity2 = capacity2 - plant
+            plants.pop(-1)
+            print(plants)#[4, 5, 1]
+            continue
+            
+
+
+            
+
+        #[0], 2
+
+
+
+
+
+
+for ind, plant in enumerate(plants):
+    print(len(plants))
+    print(capacity1 - plant)
+    if capacity1 - plant >= 0: 
+            print("larger")
+            capacity1 = capacity1 - plant
+            print(capacity1)
+    elif capacity1 - plant < 0: 
+            print("smaller")
+            refill +=1 
+            print(refill)
+            capacity1 = capacity1_starting
+            print(capacity1)
+            plant_watered = plant - capacity1
+            print(plant_watered)
+
+            
+                
+    print("---")
+            
+
+            
+watering_plants(plants, capacity1, capacity2)

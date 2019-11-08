@@ -1,0 +1,104 @@
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Oct 11 14:22:30 2019
+
+@author: ai
+"""
+
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 10 16:24:58 2019
+
+@author: A
+"""
+
+((apple, 120), (banana, 200), (apple, 150))
+
+apple min 120, mean 135, max 150
+banana 200, 200, 200
+
+apple 120
+
+banana 200
+
+apple 150
+
+string = "3\n\napple 120\n\nbanana 200\n\napple 150\n\n5"
+
+
+
+#L = ["3", "", "apple 120", "", "banana 200", "", "apple 150]
+
+def convert_string(string):
+
+    L = string.split("\n")
+    clean_L = []
+    for s in L:
+        print(s)
+        if s != "":
+            clean_L.append(s)
+            
+#    test_case_list = []      
+#    for v in clean_L:
+#            try:
+#                if int(v):
+#                    test_case_list.append(int(v))
+#            except ValueError:
+#                print("NaN")
+#            
+#    no_test_cases = clean_L.pop(0) #3
+#    
+#    nested_L = []
+#    for i in range(len(clean_L)):
+#        small_list = []
+#        
+#    for i in range(1, len(clean_L)-1):
+#        if int(clean_L[i]) and clean_L[i-1]:
+#            print("y")
+        
+        if pair == str:# "apple 120"
+            print("Enter string case")
+            new_pair = pair.split(" ")
+            # ["apple", "120]
+            small_list.append(new_pair)
+        elif int(pair):
+                continue
+                print("Break")
+    
+    print(nested_L)
+    return nested_L
+
+
+#clean_L = ["5", "apple 120", "banana 200", "apple 150]
+
+#clean_L = ["apple 120", "banana 200", "apple 150"]
+
+
+# nested_L = [["apple", "120"], ["banana", "200"], ["apple", "150"]]
+    
+nested_L = [['apple', '120'], ['banana', '200'], ['apple', '150']]
+    
+def solution(nested_L):
+
+    dictionary = {}
+    
+    for pair in nested_L:
+        dictionary[pair[0]] = []
+    
+    for pair in nested_L:
+        
+        dictionary[pair[0]].append(int(pair[1]))
+    
+    #dictionary = {'apple': 120, 150, 'banana': 200)
+    
+    end_list = []
+    for k, v in sorted(dictionary.items()):
+        #k = apple, v = 120, 150
+        max_v = max(v)
+        mean_v = sum(v)/len(v)
+        min_v = min(v)
+
+        end_list.append([k, max_v, mean_v, min_v])
+    
+    return end_list
