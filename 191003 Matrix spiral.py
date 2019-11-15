@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Oct  3 15:36:07 2019
-
-@author: A
+https://leetcode.com/problems/spiral-matrix/
 """
 
 inty = 3

@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Thu Oct  3 15:01:09 2019
-
-@author: A
+https://leetcode.com/problems/rotting-oranges/
 """
 
 ex1 = [[2,1,1],

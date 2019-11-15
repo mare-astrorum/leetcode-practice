@@ -1,9 +1,24 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Oct  4 11:12:14 2019
+https://leetcode.com/problems/two-sum/
+"""
 
-@author: A
-"""
+# Solution
+
+class Solution:
+    def twoSum(self, nums, target):
+       
+        for i, num in enumerate(nums):
+            value = target - num
+            if value in nums:
+                if nums.index(value) != i:
+                    return [i, nums.index(value)]
+
+
+
+
+
+
+# Work
 
 nums = [3, 2, 4]
 target = 6

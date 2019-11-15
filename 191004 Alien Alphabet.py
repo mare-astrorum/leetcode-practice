@@ -1,3 +1,8 @@
+'''
+https://leetcode.com/problems/verifying-an-alien-dictionary/
+'''
+
+
 words = ["fxasxpc","dfbdrifhp","nwzgs","cmwqriv","ebulyfyve","miracx","sxckdwzv","dtijzluhts","wwbmnge","qmjwymmyox"]
 order = "zkgwaverfimqxbnctdplsjyohu"
 

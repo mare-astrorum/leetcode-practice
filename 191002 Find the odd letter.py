@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
 """
-Spyder Editor
 
-This is a temporary script file.
+Find the extra character in one of the words, word order doesn't matter
+
 """
 
 
@@ -23,7 +22,3 @@ def extra_character(one_str, two_str):
 
 extra_character("google", "googgle")
 
-ari = [[1, 2, 3],
-       [4, 5, 6],
-       [7, 8, 9]]
-ari[2][2]

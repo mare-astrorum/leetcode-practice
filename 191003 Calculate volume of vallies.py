@@ -1,15 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct  3 17:40:09 2019
 
-@author: A
+"""
+https://techdevguide.withgoogle.com/resources/volume-of-water/#!
 """
 import matplotlib.pyplot as plt
 
 
 terrain = [1,3,2,4,1,3,1,4,5,2,2,1,4,2,2]
 
-len(terrain
+len(terrain)
 valleys = []
     
 index = 0

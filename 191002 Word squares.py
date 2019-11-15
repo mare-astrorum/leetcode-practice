@@ -1,3 +1,8 @@
+'''
+https://techdevguide.withgoogle.com/resources/former-coding-interview-question-word-squares/
+'''
+
+
 BALL
 AREA
 LEAD

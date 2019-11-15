@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Oct  4 12:31:33 2019
-
-@author: A
+https://leetcode.com/problems/defanging-an-ip-address/
 """
 
 address = "255.100.50.0"

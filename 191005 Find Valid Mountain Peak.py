@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Sun Oct  6 16:22:34 2019
-
-@author: ai
+https://leetcode.com/problems/valid-mountain-array/
 """
 
 A = [0, 3, 2]

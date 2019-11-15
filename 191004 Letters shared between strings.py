@@ -1,9 +1,9 @@
-# -*- coding: utf-8 -*-
 """
-Created on Fri Oct  4 14:17:38 2019
+https://leetcode.com/problems/find-common-characters/
+"""
 
-@author: A
-"""
+
+# Try
 
 inp = ["cool","lock","cook"]
 
@@ -33,8 +33,8 @@ for term in inp:
                 print(letter)
                 one_list.append(letter)
 
-term =      
 
+# Solution
 
 from collections import Counter    
 

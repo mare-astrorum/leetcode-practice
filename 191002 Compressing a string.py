@@ -1,19 +1,13 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct  2 19:14:56 2019
+https://leetcode.com/problems/decode-string/
 
-@author: A
-"""
+
+
+# This is an input example 3[abc]4[ab]c
+
+# This is the result calculaion = 3 * "abc" + 4 * "ab" + "c"
+
 
 import re
-
-
-# 3[abc]4[ab]c
-
-result = 3 * "abc" + 4 * "ab" + "c"
-
-
-
 
 seq = "3[abc]4[ab]c"
 seq2 = seq.replace("[", "*")
