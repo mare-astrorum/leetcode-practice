@@ -1,8 +1,5 @@
-# -*- coding: utf-8 -*-
 """
-Created on Wed Oct  9 18:03:37 2019
-
-@author: A
+https://leetcode.com/discuss/interview-question/394347/google-oa-2019-watering-flowers-20
 """
 
 
@@ -38,7 +35,7 @@ def watering_plants(plants, capacity1, capacity2):
     for i in range(len(plants)):
         plant = plants[0]
         
-        """ When get to the middle, do a final loop. """
+        # When get to the middle, do a final loop.
         
         if len(plants) == 1:
             if capacity2 - plant >= 0:
@@ -73,7 +70,7 @@ def watering_plants(plants, capacity1, capacity2):
         
 
         
-        """ Start with end value in the list """
+        # Start with end value in the list
         
         if capacity2 - plants[-1] >= 0:
             capacity2 = capacity2 - plants[-1]
@@ -87,7 +84,7 @@ def watering_plants(plants, capacity1, capacity2):
                 plant_watered2 = plant_watered2 - capacity2
             plants.pop(-1)
             
-        """ Continue with the first value in the list """
+        # Continue with the first value in the list 
         
         if capacity1 - plants[0] >= 0:
             capacity1 = capacity1 - plants[0]

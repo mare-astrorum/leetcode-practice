@@ -1,4 +1,9 @@
-PIZZA SHOP
+'''
+https://leetcode.com/discuss/interview-question/356935/google-oa-2019-pizza-shop
+'''
+
+
+# PIZZA SHOP
 
 pizzas = [800, 850, 900]
 toppings = [100, 150]

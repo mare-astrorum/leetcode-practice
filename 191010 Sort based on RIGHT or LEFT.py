@@ -1,16 +1,6 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 10 14:47:08 2019
-
-@author: ai
-"""
-
-
-
-{a, b, "right"} --> a is to the right of b
-{c,b, "right"} --> c is to the right of b
-{b,a, "left"} --> b is to the left of a
+# {a, b, "right"} --> a is to the right of b
+# {c,b, "right"} --> c is to the right of b
+# {b,a, "left"} --> b is to the left of a
 
 L1 = ["a", "b", "right"]
 L2 = ["c", "b", "right"]

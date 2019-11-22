@@ -1,4 +1,8 @@
-LICENSE KEY FORMATTING
+'''
+https://leetcode.com/problems/license-key-formatting/
+'''
+
+#LICENSE KEY FORMATTING
 
 s = S[::-1].replace("-", "").upper()
 i, j = 0, K

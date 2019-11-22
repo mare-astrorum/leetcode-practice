@@ -1,4 +1,8 @@
-MINIMUM DISTANCE TO THE FARTHEST NODE
+'''
+https://leetcode.com/discuss/interview-question/356378/
+'''
+
+# MINIMUM DISTANCE TO THE FARTHEST NODE
 
 import math
 

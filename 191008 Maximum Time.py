@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Oct  8 20:55:07 2019
-
-@author: ai
+https://leetcode.com/discuss/interview-question/396769/google-oa-2019-maximum-time
 """
 
 time = "0?:??"

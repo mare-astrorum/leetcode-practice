@@ -1,11 +1,9 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Tue Oct  8 13:55:04 2019
 
-@author: ai
+"""
+https://leetcode.com/problems/house-robber/
 """
 
+# Version 1
 
 nums = [1,2,3,1]
 
@@ -24,15 +22,7 @@ nums = [1,2,3,1]
     return total
 
 
-
-
-
-
-
-
-
-
-
+# Version 2, dynamic programming
 
 
 nums = [1,2,3,1]

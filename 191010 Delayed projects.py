@@ -1,33 +1,29 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Oct 10 12:27:19 2019
-
-@author: ai
+https://leetcode.com/discuss/interview-question/397524/
 """
 
-K = len(L) = no of dependencies
-L = []
+# K = len(L) = no of dependencies
+# L = []
 
-J = len(D) = no of delayed projects
-D = []
+# J = len(D) = no of delayed projects
+# D = []
 
-C = no of test cases
+# C = no of test cases
 
 
-[0] 3 test cases [1]
-[1] 2 dep 1 delay
-[2] B dep on A
-[3] C dep on B
-[4] B is delayed
+# [0] 3 test cases [1]
+# [1] 2 dep 1 delay
+# [2] B dep on A
+# [3] C dep on B
+# [4] B is delayed
 
-[5]5 dep 2 del [2]
-P
-P
-Q
-R
-S
-Q S ""
+# [5]5 dep 2 del [2]
+# P
+# P
+# Q
+# R
+# S
+# Q S ""
 
 with open('filename') as f:
     C = f.readlines()

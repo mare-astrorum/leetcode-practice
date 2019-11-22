@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Oct  8 12:06:57 2019
-
-@author: ai
+https://leetcode.com/problems/is-subsequence/
 """
 
 s = ""

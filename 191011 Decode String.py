@@ -1,4 +1,8 @@
-DECODE STRING
+'''
+https://leetcode.com/problems/decode-string/
+'''
+
+# DECODE STRING
 
 s = "3[a]2[bc]", return "aaabcbc".
 s = "3[a2[c]]", return "accaccacc".
@@ -10,22 +14,22 @@ def decodeString(s):
     stack = []
     ans = ''       
     for i in s:
-        '''Get the first set'''
+        # Get the first set
         if i != ']':
             stack.append(i)
         else:
-            '''When set is collected'''
+            # When set is collected
             tmp = ''
-            '''Chech until get to multiplication'''
+            # Chech until get to multiplication
             while stack and stack[-1] != '[':
-                '''Remove from list end and add to tmp'''
+                # Remove from list end and add to tmp
                 tmp = stack.pop() + tmp
-            '''Once get to multiplication'''
+            # Once get to multiplication
             if stack and stack[-1] == '[':
                 stack.pop()
-            '''Get multiplication factor'''
+            # Get multiplication factor
             c = ''
-            '''Incorporate longer digits'''
+            # Incorporate longer digits
             while stack and stack[-1].isdigit():
                 c = stack.pop() + c
             if c:

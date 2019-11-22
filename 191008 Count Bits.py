@@ -1,13 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Oct  8 15:33:24 2019
-
-@author: ai
+https://leetcode.com/problems/counting-bits/
 """
 
 num = 5
 
+# Version 1
 
 def countBits(num):
 
@@ -31,6 +28,8 @@ countBits(num)
     
 str(bin(5))
 
+
+# Version 2
 
 def countBits(num):
     dp = [0] * (num + 1)

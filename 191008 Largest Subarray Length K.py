@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Tue Oct  8 19:07:14 2019
-
-@author: ai
+https://leetcode.com/discuss/interview-question/352459/
 """
 
 
@@ -11,7 +7,9 @@ A = [4, 1, 4, 3, 2, 5, 6]
 K = 5
 
 
-'''Find all subarrays'''
+# Version 1
+
+# Find all subarrays
 
 def all_subarrays(A, K):
     all_subarrays = []
@@ -20,7 +18,7 @@ def all_subarrays(A, K):
         all_subarrays.append(arr)
     return all_subarrays # [[1, 4, 3, 5], [4, 3, 2, 5], [3, 2, 5, 6]]
 
-''' Find max one '''
+# Find max one 
 
 def solution(A, K):
     
@@ -28,8 +26,7 @@ def solution(A, K):
 
 
 
-
-
+# Version 2
 
 def lesser_array(X, Y):
     for ind, num in enumerate(X):
