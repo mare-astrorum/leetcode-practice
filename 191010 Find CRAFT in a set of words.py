@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Oct 10 17:52:27 2019
-
-@author: ai
+https://leetcode.com/discuss/interview-question/399689/Google-phone-interview/361641
 """
 
 src = {"minecraftgame", "intelligent", "innercrafttalent", "knife", "scissor", "stonecrafter"}

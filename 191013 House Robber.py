@@ -1,4 +1,8 @@
-HOUSE ROBBER
+'''
+https://leetcode.com/problems/house-robber/
+'''
+
+# HOUSE ROBBER
 
 Example 1:
 
@@ -20,12 +24,12 @@ def rob(nums):
     if length==2:
         return max(nums)
 	
-'''Create an array for answers'''		
+# Create an array for answers	
     dp = [0]*length # assign dp array
-'''Pick the largest response'''
+# Pick the largest response
     dp[0], dp[1] = nums[0], max(nums[0], nums[1])
     
-    '''Move through the array and pick the answer'''
+    # Move through the array and pick the answer
     for i in range(2, length):
         dp[i] = max(dp[i-2]+nums[i], dp[i-1])
 

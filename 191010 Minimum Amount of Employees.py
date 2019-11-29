@@ -1,9 +1,5 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Thu Oct 10 14:26:02 2019
-
-@author: ai
+https://leetcode.com/discuss/interview-question/397339/
 """
 
 import re

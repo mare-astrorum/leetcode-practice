@@ -1,12 +1,11 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 """
-Created on Fri Oct 11 16:09:45 2019
-
-@author: ai
+https://leetcode.com/problems/merge-intervals/
 """
 
- intervals = [[1,3], [2,4], [9,12], [5,7], [11,15]]
+# Incomplete
+
+
+intervals = [[1,3], [2,4], [9,12], [5,7], [11,15]]
 lis = [] 
 for i in range(len(intervals)-1):
      #0
